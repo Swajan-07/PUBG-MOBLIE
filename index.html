@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Mobile India</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            background-image: url('background.jpg'); /* Added background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            padding: 50px;
+        }
+        .hero {
+            background-image: url('./assests/index image.jpeg'); /* Corrected image path */
+            background-size: absolute; /* Fixed background size */
+            background-position: center;
+            height: 100vh; /* Fixed height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            text-align: bottom;
+        }
+        .content {
+            padding: 20px;
+        }
+        .btn {
+            background-color: #ff9900;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .btn:active {
+            background-color: #cc7a00;
+        }
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons a {
+            color: #ffcc00;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        #bg-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            
+        }
+        .hall {
+            font-size: 3em;
+            margin: 0;
+            text-align: bottom;
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 5s forwards; /* Fade in animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="hero"> 
+        <!-- Removed h1 from here -->
+    </div>
+    <h1 class="hall">Welcome to PUBG Mobile India</h1> <!-- Moved h1 here -->
+   
+    <div class="container">
+        <div class="content">
+            <h2>Experience the Thrill of Battle Royale</h2>
+            <p>Join millions of players in the ultimate battle for survival. Download PUBG Mobile India now and jump into the action!</p>
+            <a href="home.html" class="btn">View more</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100024209133824" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/PUBGMOBILE" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/swajan_vs?igsh=NW1zMThpbDNuYWNz" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@swajantony6690" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const welcomeText = document.querySelector('.hall');
+            welcomeText.style.opacity = 1; // Trigger the animation
+        });
+    </script>
+</body>
+</html>

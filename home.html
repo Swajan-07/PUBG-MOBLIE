@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Information</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            cursor: default;
+            background: linear-gradient(to right, #ffcc00, #ff6600);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+        }
+        a {
+            cursor: pointer;
+        }
+        nav{
+            text-align: right;
+            padding-top: 50px;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 15px;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: 2px solid #ffcc00;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffcc00;
+            color: #1a1a1a;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        h2{
+            text-align: center;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #ffcc00;
+            padding: 5px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 10px;
+        }
+        h1, h2 {
+            color: #1a1a1a;
+            text-align: center;
+        }
+        .content {
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        .content p {
+            font-size: 1.2em; /* Increase paragraph font size */
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #ffcc00;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons a {
+            color: #ffcc00;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+
+        }
+        .footer{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .btn:active {
+            background-color: #cc7a00;
+        }
+        .video-container img {
+            width: 100%; /* Make image occupy full width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional: match the content box style */
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 2s forwards; /* Fade in animation */
+        }
+        .poll {
+            text-align: center;
+            text size: 1.5em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>   
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="gameplay.html">Gameplay</a>
+            <a href="contact us.html">Feedback</a>
+        </nav>
+        <div class="video-container"></div>
+        <h1>PUBG Information Page</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>Gameplay Videos</h1>
+            <div class="video-container" style="display: flex; justify-content: space-between;">
+               <img src="./assests/home image.jpeg" alt="PUBG Gameplay Image">
+            </div>
+        </div>
+        <div class="content">
+            <h1>About PUBG</h1>
+            <p>PUBG (PlayerUnknown's Battlegrounds) is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction.</p>
+        </div>
+        <div class="content">
+            <h1>Gameplay</h1>
+            <p class="poll">In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting
+                killed themselves. The last player or team standing wins the round.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100024209133824" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/PUBGMOBILE" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/swajan_vs?igsh=NW1zMThpbDNuYWNz" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@swajantony6690" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>   
+        <p class="footer">&copy;  2025 PUBG Corporation. All rights reserved by VS.</p>
+</body>
+</html>

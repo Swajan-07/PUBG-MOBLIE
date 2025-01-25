@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"], .form-group input[type="reset"] {
+            width: auto;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        .form-group input[type="reset"] {
+            background-color: #d9534f;
+        }
+        .form-group input[type="submit"]:hover, .form-group input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .form-group input[type="text"]:focus, .form-group input[type="email"]:focus, .form-group textarea:focus {
+            border-color: #5cb85c;
+            box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+        }
+        .form-group input[type="submit"]:focus, .form-group input[type="reset"]:focus {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .thank-you {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function sendFeedback(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const feedback = document.getElementById('feedback').value;
+            const mailtoLink = `mailto:swajansaju@gmail.com?subject=Feedback from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AFeedback: ${feedback}`;
+            window.location.href = mailtoLink;
+            alert('Thank you for your feedback!');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback</h2>
+        <form onsubmit="sendFeedback(event)">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user icon"></i>Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope icon"></i>Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback"><i class="fas fa-comments icon"></i>Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <div class="thank-you">
+        <p>Thank you for using our website!</p>
+        <i class="fas fa-smile-beam fa-2x"></i>
+    </div>
+</body>
+</html>
